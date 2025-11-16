@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Weather Pro 🌦️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌍 Global Weather Pro</h1>
+  <div id="dateTime"></div>
+
+  <div class="container">
+    <input type="text" id="cityInput" placeholder="Enter city or country" />
+    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="getLocation()">📍 Use My Location</button>
+  </div>
+
+  <div id="weather"></div>
+  <h2 id="forecastTitle"></h2>
+  <div id="forecast"></div>
+  <iframe id="mapFrame" src=""></iframe>
+  <div id="error" class="error"></div>
+
+  <!-- 🔄 Loading Popup -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Fetching weather data... Please wait 🌤️</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
